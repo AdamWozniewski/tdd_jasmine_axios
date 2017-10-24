@@ -1,0 +1,16 @@
+{
+  "name": "testy",
+  "version": "1.0.0",
+  "description": "testy TDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node spec"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.0",
+    "jasmine-node": "^1.14.5",
+    "nock": "^9.0.25"
+  }
+}
