@@ -4,13 +4,23 @@
   "description": "testy TDD",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/jasmine-node spec"
+    "test": "nyc ./node_modules/.bin/mocha spec/appSpec.js --reporter spec"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.17.0",
+    "chai": "^4.1.2",
+    "istanbul": "^0.4.5",
     "jasmine-node": "^1.14.5",
-    "nock": "^9.0.25"
+    "mocha": "^4.0.1",
+    "nock": "^9.0.25",
+    "nyc": "^11.2.1"
+  },
+  "nyc": {
+    "include": [
+      "conventer/conventer.js",
+      "helpers/helper.js"
+    ]
   }
 }

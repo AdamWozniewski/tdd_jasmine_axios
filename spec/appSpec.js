@@ -1,10 +1,11 @@
 var converter = require('../conventer/conventer');
 var helpers = require('../helpers/helper');
-var nock = require('nock')
+var nock = require('nock');
+var chai = require('chai');
 
 describe('aktualna waluta', () => {
     describe('GET wszystkie waluty', () => {
-
+        let expect = chai.expect;
         beforeEach(() => {
            let ratesResponse = {
                "base": "EUR",
